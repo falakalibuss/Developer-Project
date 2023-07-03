@@ -1,0 +1,569 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@500&family=Shadows+Into+Light&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@500&family=Russo+One&family=Shadows+Into+Light&display=swap');
+  *{
+    font-family: 'poppins';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .group{
+    position: relative;
+    background: radial-gradient(circle at 50% 50%, rgb(51,10,10), rgb(5,5,21)) ;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c7c4c454;
+    padding: 20px 50px;
+    z-index: 5;
+   
+    
+    
+  }
+
+  header .logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+
+
+  }
+  header .logo a b{
+    color: #fd003b;
+    font-weight: 800;
+
+  }
+  header .logo i{
+    color: white;
+    font-size: 25px;
+  }
+
+  header .menu{
+    display: flex;
+    align-items: center;
+
+  }
+  .menu .menu-content{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .menu .menu-content a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    
+  }
+  .menu .menu-content a:hover{
+    color: #fd003b;
+    cursor: pointer;
+
+  }
+  .menu i{
+    display: none;
+  }
+
+/* Main kısmı*/
+nav{
+   
+    height: 500px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+nav .left{
+    color: white;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 50px;
+}
+.animation{
+    color: #c0d666;
+    width: 150px;
+    font-weight: 600;
+    font-size: 34px;
+    animation: anim1 4s ease-in-out 3s 1000;
+}
+@keyframes anim1 {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }  
+}
+
+nav .left h1{
+    font-family: 'Russo One';
+    font-size: 46px;
+}
+nav .left button{
+    padding: 7px;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid #cab2bb ;
+}
+nav .left button:hover{
+    border-radius: 10px;
+    border: 2px solid rgb(94, 17green, 94);
+    transition: .2s;
+}
+
+
+/* social media kısmı*/
+.advertisement{
+    border: 5px solid purple;
+    background-color: #c7c4c454;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+    animation: reklam 3s ease-in;
+    animation-iteration-count: infinite;
+}
+@keyframes reklam {
+    0%{transform: translateX(10px);
+
+    }
+    50%{transform: translateX(-10px);
+
+    }
+    100%{transform: translateX(10px);
+
+    }
+
+    
+    
+}
+
+.advertisement img{
+    cursor: pointer;
+    width: 60px;
+
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+/* CARDS*/
+aside{
+    background-image:radial-gradient(rgba(0,0,0,0.60) 40%,black),url(background.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+aside h1{
+    font-size: 36px;
+    color: white;
+    padding-top: 30px ;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+
+}
+.cards .card{
+    border: 0.8px solid rgba(79,76,76, 0.9);
+    color: white;
+    width: 45%;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+.cards .card:hover{
+    border: 0.8px solid rgba(207,188,188,0.5);
+    background: radial-gradient(rgba(13,12,15,0.9), black );
+}
+.card .card-title{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card .card-title img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.card p{
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.card button{
+    padding: 7px 15px;
+    font-size: 15px;
+    color: white;
+    background: transparent;
+    border: 4px solid #500523;
+    border-radius: 20px ;
+}
+/*ABOUT*/
+article{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+article h1{
+    font-size: 36px;
+
+}
+article p{
+    margin-bottom: 40px;
+    color: #c13e73 ;
+    text-align: center;
+
+}
+.about{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about .about-left{
+    width: 60%;
+    
+    
+}
+.about .about-left img{
+    width: 465px;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 20px;
+    align-items: center;
+}
+.about .about-right{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    background-color: #c49a99;
+        border-radius: 10px;
+
+}
+.about-right h2{
+    color: #c13e73;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.about-right span{
+    font-size: 12px;
+    text-align: center;
+}
+.about-right button{
+    padding: 7px;
+    margin-top: 30px;
+    color: white;
+    background: linear-gradient(to left, #c13e73, #ee156c);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.about-right button:hover{
+    cursor: pointer;
+    transition: 0.2s;
+}
+footer{
+    background-color: rgb(184, 182, 182);
+    bottom: 0;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    justify-content: space-between;
+    
+}
+
+footer .logo i{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+footer .logo a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+
+  }
+  
+ .footer-icons img{
+    width: 20px;
+  }
+  footer .logo a b{
+    color: #fd003b;
+    font-weight: 800;
+  }
+  .footer-left{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .footer-left ul li{
+    font-size: 14px;
+  }
+  .footer-left ul li:hover{
+    cursor: pointer;
+  }
+  .footer-left ul li:first-child{
+    font-weight: bold;
+  }
+  .about-me{
+    
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+   
+  }
+  .about-me-left{
+    width: 60%;
+    padding-left: 20px;
+    padding-top: 50px;
+    
+    
+  }
+  .about-me h2{
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .about-me-left h2 b{
+    
+    color: #c13e73;
+    opacity: 0.7;
+  }
+  .about-me-left h5{
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .about-me-left p{
+    padding-top: 20px;
+    text-align: start;
+    font-size: 18px;
+  }
+ .about-me-left span{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.5;
+ }
+ .about-me-left span:hover{
+    cursor: pointer;}
+    .contact-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 0;
+      }
+      .contact-right input,
+      .contact-right textarea {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #2a2a2a;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        border: none;
+      }
+      .contact-right textarea {
+        height: 130px;
+      }
+      .contact-right button {
+        padding: 7px;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        border: 4px solid #500523;
+        background-color: transparent;
+        margin: 0 70px;
+        width: 200px;
+        align-self: center;
+      }
+      .contact-right button:hover{
+        cursor: pointer;
+      }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  /* tablet için genişlik min=768px , max=1023px */
+  @media screen and (min-width:768px) and (max-width:1023px) {
+
+    header .menu{
+        position: relative;
+    }
+    header .menu:hover .menu-content{
+        background-color: rgb(109, 113, 121);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 220px;
+        margin-left: -95px;
+        border-radius: 5px;
+        padding: 10px;
+        
+        
+    }
+    .menu-content a{
+        color: black !important;
+    }
+    .menu-content a:hover{
+        color: red !important;
+    }
+    header .menu i{
+        display: flex;
+        font-size: 25px;
+        color: white;
+    }
+   
+    header .menu .menu-content{
+        display: none;
+
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .about-left{
+        width: 50%;
+       
+    }
+    .about .about-left img{
+        width: 100%;
+        height: 300px;
+    }
+    .about .about-right{
+        width: 80% ;
+        text-align: center;
+        background-color: #c49a99;
+        border-radius: 10px;
+    }
+    .about .about-right h1{
+        text-align: center;
+    }
+   
+    
+
+  }
+  /* mobil genişlik ölçüleri min-width:0px max-width:768px */
+  
+  @media screen and (min-width:0px) and (max-width:767px) {
+
+    header .menu{
+        position: relative;
+    }
+    header .menu:hover .menu-content{
+        background-color: rgb(165, 169, 177);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 220px;
+        margin-left: -95px;
+        border-radius: 5px;
+        padding: 10px;
+        
+        
+    }
+    .menu-content a{
+        color: black !important;
+    }
+    .menu-content a:hover{
+        color: red !important;
+    }
+    header .menu i{
+        display: flex;
+        font-size: 25px;
+        color: white
+    }
+    header .menu .menu-content{
+        display: none;
+
+    }
+    .cards .card{
+        width: 90%;
+    }
+    .about{
+        flex-direction: column;
+        
+    }
+    .about .about-left{
+        width: 100%;
+    }
+    .about .about-left img{
+        width: 100%;
+        height: 300px;
+    }
+    .about .about-right{
+        width: 100%;
+        background-color: #c49a99;
+        border-radius: 10px;
+    }
+    .footer-right{
+        width:27%;
+    }
+    .footer-left{
+        width: 68%;
+       }
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-left{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+ 
+}
